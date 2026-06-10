@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>    
+<body>
+    <!-- Dark Mode Toggle -->
+    <input type="checkbox" id="dark-toggle">
+   
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <h1 class="logo">My Portfolio</h1>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <label for="dark-toggle" class="toggle-label">🌙</label>
+        </nav>
+    </header>
+
+    <main class="page">
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-left">
+                <h1>
+                    Hello<span>,</span><br>
+                    <small>I am</small> 
+                    <span class="hero-name">Shambhavi</span>
+                </h1>  
+                <h2 class="hero-role">
+                    Web Developer & AI Enthusiast
+                </h2>
+                <p class="hero-text">
+                    A curious second-year student with a strong interest in 
+                    artificial intelligence, data science, software development, 
+                    and algorithms. Eager to learn and contribute to innovative, 
+                    scalable, and impactful technology solutions.
+                </p>
+            </div>
+
+            <div class="hero-right">
+                <div class="icon top">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+
+                <div class="icon left">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+
+                <div class="main-circle">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <div class="icon bottom">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="section-title">
+                <h2>Featured <span>Projects</span></h2>
+                <p>
+                    A collection of projects showcasing my skills in web development and programming.
+                </p>
+            </div>
+
+            <div class="project-grid">
+                <div class="card">
+                    <h3>MCQ Quiz Website</h3>
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <p class="project-desc">
+                        Developed an interactive quiz application with multiple-choice questions and
+                        score tracking. Implemented real-time feedback and final result evaluation
+                        using JavaScript DOM manipulation for dynamic content loading. Designed a
+                        fully responsive UI for desktop and mobile.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Portfolio Website</h3>
+
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                    </div>
+
+                    <p class="project-desc">
+                        Designed and developed a responsive personal portfolio website using
+                        Bootstrap components for responsiveness and cross-browser compatibility.
+                        Integrated interactive forms including Quiz App and Registration Form with
+                        client-side validation using JavaScript.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Student Registration System</h3>
+
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <p class="project-desc">
+                        Built a registration form with validation,
+                        error handling, and responsive design using
+                        JavaScript and modern CSS.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Get in Touch</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2026 Shambhavi 
+                <br> 
+                <a href="https://github.com" target="_blank" rel="noopener">GitHub</a> | 
+                <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a> |
+                <a href="#">Portfolio</a>
+            </p>
+            <a href="#hero" class="back-to-top">Back to Top</a>
+        </footer>
+</body>
+</html>
