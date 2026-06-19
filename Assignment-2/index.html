@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Minesweeper Game</title>
+
+    <link rel="stylesheet" href="minesweeper.css">
+    
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <input type="checkbox" id="themeToggle">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="title">
+            <h1>Minesweeper 💣</h1>
+            <p>Can you clear the board without triggering a mine?<br>
+                It's all about logic, strategy and a little luck!
+            </p>
+        </div>
+
+        <div class="header-actions">
+            <button class="panel-toggle" id="statsToggle">Statistics</button>
+            <button class="panel-toggle" id="leaderboardToggle">Leaderboard</button>
+            <label for="themeToggle" class="toggle-label">🌙</label>
+        </div>
+    </header>
+
+    <!-- STATUS BAR -->
+    <section class="status">
+        <div>💣 Mines: <span id="mineCounter">10</span></div>
+        <div>⏱ Time: <span id="timer">0</span></div>
+    </section>
+
+    <!-- GAME BOARD -->
+    <main>
+        <div id="board"></div>
+    </main>
+
+    <section class="controls" id="controlsSection">
+        <button id="newGameBtn">New Game</button>
+        <button id="resetGameBtn">Reset</button>
+
+        <select id="difficulty" class="difficulty-hidden" title="Select difficulty level">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+            <option value="custom">Custom</option>
+        </select>
+    </section>
+
+    <div class="side-panel-overlay" id="sidePanelOverlay"></div>
+
+    <aside class="side-panel" id="sidePanel">
+        <button class="close-panel" id="closePanel" aria-label="Close panel">&times;</button>
+
+        <section class="panel-section active" id="statsPanel">
+            <h3>Statistics</h3>
+            <p>Games Played: <span id="gamesPlayed"></span></p>
+            <p>Games Won: <span id="gamesWon"></span></p>
+            <p>Win Rate: <span id="winRate"></span></p>
+            <button id="resetStatsBtn">Reset Stats</button>
+        </section>
+
+        <section class="panel-section" id="leaderboardPanel">
+            <h2>Leaderboard (Top 3)</h2>
+            <ul id="leaderboardList"></ul>
+        </section>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
